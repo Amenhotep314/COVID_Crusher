@@ -333,3 +333,12 @@ Received Import Request.
 Start importing Assets/ExampleAssets/Models/vein.obj using Guid(714580edbd4b94e8f93c7e1e216ced6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05aafc696f541068aa60fe54c103745') in 0.069171 seconds 
   Import took 0.075954 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 327.402300 seconds.
+  path: Assets/ExampleAssets/Models/obj 3.mtl
+  artifactKey: Guid(09a69f55989124740b50366afc30dc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/obj 3.mtl using Guid(09a69f55989124740b50366afc30dc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e166daf410a02a6b6c05ece00ee1ec9a') in 0.012897 seconds 
+  Import took 0.018788 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
