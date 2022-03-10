@@ -1,0 +1,344 @@
+Unity Editor version:    2020.3.27f1 (e759542391ea)
+Branch:                  2020.3/release
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.2 (Build 21D49)
+Darwin version:          21.3.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/sjauser/Desktop/Nathan Lenzini/COVID Crusher
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51095
+Successfully changed project path to: /Users/sjauser/Desktop/Nathan Lenzini/COVID Crusher
+/Users/sjauser/Desktop/Nathan Lenzini/COVID Crusher
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 74.26 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 7.47 ms.
+Initialize engine version: 2020.3.27f1 (e759542391ea)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/sjauser/Desktop/Nathan Lenzini/COVID Crusher/Assets
+GfxDevice: creating device client; threaded=0
+2022-03-09 14:41:13.154 Unity[65201:1807395] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2022-03-09 14:41:13.154 Unity[65201:1807395] Metal devices available: 1
+2022-03-09 14:41:13.154 Unity[65201:1807395] 0: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2022-03-09 14:41:13.154 Unity[65201:1807395] Using device Intel(R) Iris(TM) Plus Graphics 640 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 640
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56201
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000406 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 48.37 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.664 seconds
+Domain Reload Profiling:
+	ReloadAssembly (664ms)
+		BeginReloadAssembly (43ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (546ms)
+			LoadAssemblies (43ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (203ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (209ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (112ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003646 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.196 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1197ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (967ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (361ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (341ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (242ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.001006 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.000951 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.27f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Initializing Unity extensions:
+2022-03-09 14:41:16.135 Unity[65201:1807395] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000e76060 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-03-09 14:41:16.138 Unity[65201:1807395] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000e065a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+Unloading 1971 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.7 MB.
+System memory in use after: 192.8 MB.
+
+Unloading 94 unused Assets to reduce memory usage. Loaded Objects now: 2441.
+Total: 3.508530 ms (FindLiveObjects: 0.167389 ms CreateObjectMapping: 0.073506 ms MarkObjects: 2.749138 ms  DeleteObjects: 0.517625 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/covid.obj
+  artifactKey: Guid(b84811122f38b4b49bf2a410bba5bcf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/covid.obj using Guid(b84811122f38b4b49bf2a410bba5bcf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f354f399458e643def12304a1366c3') in 1.662682 seconds 
+  Import took 1.668790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.964168 seconds.
+  path: Assets/ExampleAssets/Materials/Controller.mat
+  artifactKey: Guid(3d2e36aacd7dc084b96e0755f1af4137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Materials/Controller.mat using Guid(3d2e36aacd7dc084b96e0755f1af4137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '271f0d15b20c526c1bb2bd4402537b47') in 1.095681 seconds 
+  Import took 1.100837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/ExampleAssets/Materials/Grid.mat
+  artifactKey: Guid(3f9336a53d1d2ea43895699cc52cb411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Materials/Grid.mat using Guid(3f9336a53d1d2ea43895699cc52cb411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2483741e9f013c1fcb4842c045f937d') in 0.072112 seconds 
+  Import took 0.075328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/ExampleAssets/Materials/Skybox Light.mat
+  artifactKey: Guid(3a408e788dcbed6429c8d22a01b32a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Materials/Skybox Light.mat using Guid(3a408e788dcbed6429c8d22a01b32a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2104d585b1997bd6bcd8f1a7b66f28') in 0.041652 seconds 
+  Import took 0.045119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/ExampleAssets/Models/XRControllerLeft.fbx
+  artifactKey: Guid(e48d18018a0ba46c283d9fd9c227e578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/XRControllerLeft.fbx using Guid(e48d18018a0ba46c283d9fd9c227e578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d7a0bf7d114a5c6320170c444788e2') in 0.234254 seconds 
+  Import took 0.241355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/ExampleAssets/Models/XRControllerRight.fbx
+  artifactKey: Guid(2d10b9b89f2474de9800b152c3d00004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/XRControllerRight.fbx using Guid(2d10b9b89f2474de9800b152c3d00004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403a5ff2dc6afe0fb00542b1b295670b') in 0.160154 seconds 
+  Import took 0.163723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 162.590279 seconds.
+  path: Assets/ExampleAssets/Models/covid.obj
+  artifactKey: Guid(02b14f305c2a947dd8c49b32e3e420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/covid.obj using Guid(02b14f305c2a947dd8c49b32e3e420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe20fbde64d6b94dcad408bc47461f9') in 0.119337 seconds 
+  Import took 0.124439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.121691 seconds.
+  path: Assets/ExampleAssets/Models/obj.mtl
+  artifactKey: Guid(d5fe7c9f817c0400fa041c152299f825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/obj.mtl using Guid(d5fe7c9f817c0400fa041c152299f825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9074c376404f08d61c2a8d316c12400') in 0.111264 seconds 
+  Import took 0.117622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.187349 seconds.
+  path: Assets/ExampleAssets/Models/red_blood_cell.obj
+  artifactKey: Guid(5da86a76686954a84af321fdad077869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/red_blood_cell.obj using Guid(5da86a76686954a84af321fdad077869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ccbc177aaac8939c1b777a93d861348') in 0.098917 seconds 
+  Import took 0.103614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.844921 seconds.
+  path: Assets/ExampleAssets/Models/obj 1.mtl
+  artifactKey: Guid(05d7c6e21b0a44ffd9973e55a2a58624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/obj 1.mtl using Guid(05d7c6e21b0a44ffd9973e55a2a58624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4018f80d59d9fb2b2b9e7e2e0478eeb') in 0.011071 seconds 
+  Import took 0.017068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.154200 seconds.
+  path: Assets/ExampleAssets/Models/syringe.obj
+  artifactKey: Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/syringe.obj using Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d7572cf2b0ee5a5aceb7981960a30c') in 0.072912 seconds 
+  Import took 0.077924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.079738 seconds.
+  path: Assets/ExampleAssets/Models/red_blood_cell.obj
+  artifactKey: Guid(5da86a76686954a84af321fdad077869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/red_blood_cell.obj using Guid(5da86a76686954a84af321fdad077869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b1124d957475ad94b0e96087217dc2') in 0.074946 seconds 
+  Import took 0.079451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.584416 seconds.
+  path: Assets/ExampleAssets/Models/syringe.obj
+  artifactKey: Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/syringe.obj using Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44dd8f9e4cd40482fd1ae926a219613') in 0.068579 seconds 
+  Import took 0.074180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.211362 seconds.
+  path: Assets/ExampleAssets/Models/obj 2.mtl
+  artifactKey: Guid(46242c43f63b84ca3ac18056344c87f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/obj 2.mtl using Guid(46242c43f63b84ca3ac18056344c87f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6b87d2e7c3b20d3cd24b0fd00e86d5') in 0.011149 seconds 
+  Import took 0.017406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.381043 seconds.
+  path: Assets/ExampleAssets/Models/syringe.obj
+  artifactKey: Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/syringe.obj using Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bc28979ec35ee8caba13adebfc8e270') in 0.064579 seconds 
+  Import took 0.071078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.287515 seconds.
+  path: Assets/ExampleAssets/Models/covid.obj
+  artifactKey: Guid(02b14f305c2a947dd8c49b32e3e420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/covid.obj using Guid(02b14f305c2a947dd8c49b32e3e420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503779ea411e32b85006fc1c2442082a') in 0.087909 seconds 
+  Import took 0.091601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.102053 seconds.
+  path: Assets/ExampleAssets/Models/covid.obj
+  artifactKey: Guid(02b14f305c2a947dd8c49b32e3e420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/covid.obj using Guid(02b14f305c2a947dd8c49b32e3e420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba51acb11d054a469397e727073cdc80') in 0.096565 seconds 
+  Import took 0.101101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.748943 seconds.
+  path: Assets/ExampleAssets/Models/red_blood_cell.obj
+  artifactKey: Guid(5da86a76686954a84af321fdad077869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/red_blood_cell.obj using Guid(5da86a76686954a84af321fdad077869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcbbb031c947212b6fa50ef7880bbecc') in 0.062713 seconds 
+  Import took 0.067932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.070124 seconds.
+  path: Assets/ExampleAssets/Models/syringe.obj
+  artifactKey: Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/syringe.obj using Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ee554e13ec74baab34872f37c5cc58') in 0.072828 seconds 
+  Import took 0.076691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.694231 seconds.
+  path: Assets/ExampleAssets/Models/red_blood_cell.obj
+  artifactKey: Guid(5da86a76686954a84af321fdad077869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/red_blood_cell.obj using Guid(5da86a76686954a84af321fdad077869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d1eca259a2b33eaef9db63cd81f48d') in 0.071067 seconds 
+  Import took 0.077134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.420125 seconds.
+  path: Assets/ExampleAssets/Models/syringe.obj
+  artifactKey: Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/syringe.obj using Guid(0ea12253cb7514e9b86b14cb7ad4f967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd38b5b2af6b79ab9aa0c68e7258fa5') in 0.071363 seconds 
+  Import took 0.076389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.277018 seconds.
+  path: Assets/ExampleAssets/Models/vein.obj
+  artifactKey: Guid(714580edbd4b94e8f93c7e1e216ced6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/vein.obj using Guid(714580edbd4b94e8f93c7e1e216ced6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '193f2129d4410c052a864d4a27ddb1f1') in 0.059579 seconds 
+  Import took 0.063101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.330791 seconds.
+  path: Assets/ExampleAssets/Models/vein.obj
+  artifactKey: Guid(714580edbd4b94e8f93c7e1e216ced6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/vein.obj using Guid(714580edbd4b94e8f93c7e1e216ced6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05aafc696f541068aa60fe54c103745') in 0.069171 seconds 
+  Import took 0.075954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 327.402300 seconds.
+  path: Assets/ExampleAssets/Models/obj 3.mtl
+  artifactKey: Guid(09a69f55989124740b50366afc30dc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Models/obj 3.mtl using Guid(09a69f55989124740b50366afc30dc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e166daf410a02a6b6c05ece00ee1ec9a') in 0.012897 seconds 
+  Import took 0.018788 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
