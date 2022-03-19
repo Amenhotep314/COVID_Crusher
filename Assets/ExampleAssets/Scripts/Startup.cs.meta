@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 10ba03b64095442f091f687374b90787
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - currentRedBloodCell: {fileID: 4803620930416389622, guid: 6329faadee0d34f75a494aff3bbcf26f,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
