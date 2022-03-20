@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class redBloodCell : MonoBehaviour
 {
-    private float[] rotations = new float[3];
-    private Vector3 initialPosition;
-    private float speed = 6.0f;
-    private float rotationSpeed = 2.0f;
-    // Start is called before the first frame update
+    //Links to the redBloodCell prefab
+
+    private float[] rotations = new float[3];   //Rotation amount along each axis, from negative to positive speeds
+    private Vector3 initialPosition;            //Location to return to after reaching the end of the vein
+    private float speed = 6.0f;                 //Translate amount along the z-axis
+    private float rotationSpeed = 2.0f;         //Maximum rotation amount
+
     void Start()
     {
         for(int i = 0; i < 3; i++)
@@ -19,7 +21,6 @@ public class redBloodCell : MonoBehaviour
         initialPosition = new Vector3(transform.position[0], transform.position[1], 90);
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(-Vector3.forward * Time.deltaTime * speed, Space.World);
