@@ -9,7 +9,7 @@ public class leftTrigger : MonoBehaviour
     {
         //https://www.youtube.com/watch?v=EINgIoTG8D4
         //https://docs.unity3d.com/Manual/class-LineRenderer.html
-        
+        //https://www.youtube.com/watch?v=m0fjrQkaES4
     }
 
     // Update is called once per frame
