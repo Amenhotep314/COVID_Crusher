@@ -29,7 +29,7 @@ public class Startup : MonoBehaviour
     {
         //Spawns many instances of redBloodCell and assigns them (x, y) coordinates
 
-        int quantity = 1250;    //Number of cells
+        int quantity = 1500;    //Number of cells
         float radius = 13.0f;   //Distance of each cell from the vein's center
         float theta;            //Angle of cell from x-axis counterclockwise, from 0 to 2π radians
         float x;
