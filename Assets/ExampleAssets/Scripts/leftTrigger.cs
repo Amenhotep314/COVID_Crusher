@@ -13,8 +13,10 @@ public class leftTrigger : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        RaycastHit hit;
+        Ray shooterDirection = new Ray(transform.position, transform.rotation.eulerAngles);
         
     }
 }
