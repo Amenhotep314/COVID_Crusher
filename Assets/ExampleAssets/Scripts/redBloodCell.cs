@@ -24,7 +24,7 @@ public class redBloodCell : MonoBehaviour
     void Update()
     {
         transform.Translate(-Vector3.forward * Time.deltaTime * speed, Space.World);
-        transform.Rotate(rotations[0], rotations[1], rotations[2], Space.Self);
+        transform.Rotate(rotations[0] * Time.deltaTime, rotations[1] * Time.deltaTime, rotations[2] * Time.deltaTime, Space.Self);
 
         if(transform.position[2] <= -90)
         {
