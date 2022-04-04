@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1155252428410958691}
   - component: {fileID: 1694196282864358518}
   - component: {fileID: 8161979850551012585}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: covid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 1945058772295204410}
   - component: {fileID: 3097602489860277874}
   - component: {fileID: 4711398389687849034}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: group_0_4634441
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 2152177884516123407}
   - component: {fileID: 7780564306174758815}
   - component: {fileID: 8887730944245510940}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: group_0_15277357
   m_TagString: Untagged
   m_Icon: {fileID: 0}

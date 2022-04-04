@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6637050354925364640}
   - component: {fileID: 6598111413918073413}
   - component: {fileID: 5512136317272952098}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: syringe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 9105704264102834205}
   - component: {fileID: 7263004248121649110}
   - component: {fileID: 4326922165422519935}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: group_0_14541540
   m_TagString: Untagged
   m_Icon: {fileID: 0}

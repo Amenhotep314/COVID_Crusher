@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class redBloodCell : MonoBehaviour
+public class RedBloodCell : MonoBehaviour
 {
     //Links to the redBloodCell prefab
 
     private float[] rotations = new float[3];   //Rotation amount along each axis, from negative to positive speeds
     private Vector3 initialPosition;            //Location to return to after reaching the end of the vein
     private float speed = 6.0f;                 //Translate amount along the z-axis
-    private float rotationSpeed = 2.0f;         //Maximum rotation amount
+    private float rotationSpeed = 30.0f;         //Maximum rotation amount
 
     void Start()
     {

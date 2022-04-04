@@ -17,8 +17,7 @@ public class LeftController : MonoBehaviour
     void FixedUpdate()
     {
         RaycastHit hit;
-        Ray shooterDirection = new Ray(transform.position, transform.forward);
-        bool target = Physics.Raycast(transform.position, transform.forward, out hit, 90, 1, QueryTriggerInteraction.Collide);
+        bool target = Physics.Raycast(transform.position, transform.forward, out hit, 90, 6, QueryTriggerInteraction.Collide);
         Debug.DrawRay(transform.position, transform.forward);
         print(target);
 
@@ -27,6 +26,9 @@ public class LeftController : MonoBehaviour
         else currentLeftLine.SetPosition(1, transform.localPosition + new Vector3(0, 0, 90));
 
         bool triggerValue;
-        //if(XRNode.LeftHand.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue){}
+        if(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
+        {
+
+        }
     }
 }
