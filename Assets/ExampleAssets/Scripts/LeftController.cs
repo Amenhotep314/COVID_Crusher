@@ -22,8 +22,7 @@ public class LeftController : MonoBehaviour
         print(target);
 
         currentLeftLine.SetPosition(0, transform.position);
-        if(target) currentLeftLine.SetPosition(1, hit.point);
-        else currentLeftLine.SetPosition(1, transform.localPosition + new Vector3(0, 0, 90));
+        currentLeftLine.SetPosition(1, transform.localPosition + new Vector3(0, 0, 90));
 
         bool triggerValue;
         if(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
