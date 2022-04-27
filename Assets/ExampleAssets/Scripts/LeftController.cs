@@ -8,26 +8,45 @@ public class LeftController : MonoBehaviour
 {
     public LineRenderer currentLeftLine;
 
-        void Start()
+    void Start()
     {
         
     }
 
-    // Update is called once per frame
+    int frames = 25;
+
     void FixedUpdate()
     {
         RaycastHit hit;
-        bool target = Physics.Raycast(transform.position, transform.forward, out hit, 90, 6, QueryTriggerInteraction.Collide);
-        Debug.DrawRay(transform.position, transform.forward);
-        print(target);
+        int layerMask = 1 << 6;
 
-        currentLeftLine.SetPosition(0, transform.position);
-        currentLeftLine.SetPosition(1, transform.localPosition + new Vector3(0, 0, 90));
+        bool target = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask);
+
+        if(target)
+        {
+            currentLeftLine.SetPosition(0, transform.position);
+            currentLeftLine.SetPosition(1, transform.TransformPoint(Vector3.forward) * hit.distance);
+        }
+        else
+        {
+            currentLeftLine.SetPosition(0, transform.position);
+            currentLeftLine.SetPosition(1, transform.TransformPoint(Vector3.forward) * 90);
+        }
 
         bool triggerValue;
-        if(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
+        if(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue && frames >= 25)
         {
+            frames = 0;
+            RaycastHit shotHit;
 
+            bool shotTarget = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shotHit, Mathf.Infinity, layerMask);
+
+            if(shotTarget)
+            {
+                shotHit.transform.gameObject.SendMessage("shoot");
+            }
         }
+
+        frames++;
     }
 }

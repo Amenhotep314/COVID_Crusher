@@ -26,4 +26,10 @@ public class Covid : MonoBehaviour
             Object.Destroy(this.gameObject);
         }
     }
+
+    public void shoot()
+    {
+        Startup.changeScore(200);
+        Object.Destroy(this.gameObject);
+    }
 }

@@ -31,4 +31,9 @@ public class RedBloodCell : MonoBehaviour
             transform.position = initialPosition;
         }
     }
+
+    public void shoot()
+    {
+        Startup.changeScore(-100);
+    }
 }

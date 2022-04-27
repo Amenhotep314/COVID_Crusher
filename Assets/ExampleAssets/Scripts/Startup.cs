@@ -15,6 +15,7 @@ public class Startup : MonoBehaviour
 
     private float syringeDelayMin = 15.0f;  //Minimum time between syringe spawning in seconds
     private float syringeDelayMax = 30.0f;  //Maximum time between syringe spawning in seconds
+    private static int score = 0;
 
     void Start()
     {
@@ -66,5 +67,11 @@ public class Startup : MonoBehaviour
         Instantiate(currentSyringe, new Vector3(x, y, 90), transform.rotation);
 
         Invoke("createSyringes", Random.Range(syringeDelayMin, syringeDelayMax));
+    }
+
+    public static void changeScore(int amount)
+    {
+        score += amount;
+        print(score);
     }
 }

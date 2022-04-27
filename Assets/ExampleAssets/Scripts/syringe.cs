@@ -26,4 +26,10 @@ public class Syringe : MonoBehaviour
             Object.Destroy(this.gameObject);
         }
     }
+
+    public void shoot()
+    {
+        Startup.changeScore(300);
+        Object.Destroy(this.gameObject);
+    }
 }

@@ -6,6 +6,10 @@ MonoImporter:
   defaultReferences:
   - currentRedBloodCell: {fileID: 4803620930416389622, guid: 6329faadee0d34f75a494aff3bbcf26f,
       type: 3}
+  - currentCovid: {fileID: 1964580279157254617, guid: 03c3be7e471844ab897e1390c346bba7,
+      type: 3}
+  - currentSyringe: {fileID: 6291628247566565146, guid: 27273d584a061472ca94deb18037fc41,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
