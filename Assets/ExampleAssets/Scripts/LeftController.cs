@@ -7,10 +7,13 @@ using UnityEngine.XR;
 public class LeftController : MonoBehaviour
 {
     public LineRenderer currentLeftLine;
+    private Color neutral = new Color(0.0f, 0.0f, 1.0f);
+    private Color fired = new Color(1.0f, 0.0f, 0.0f);
 
     void Start()
     {
-        
+        currentLeftLine.startColor = neutral;
+        currentLeftLine.endColor = neutral;
     }
 
     int frames = 25;
@@ -21,16 +24,17 @@ public class LeftController : MonoBehaviour
         int layerMask = 1 << 6;
 
         bool target = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask);
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 90, Color.green);
 
         if(target)
         {
             currentLeftLine.SetPosition(0, transform.position);
-            currentLeftLine.SetPosition(1, transform.TransformPoint(Vector3.forward) * hit.distance);
+            currentLeftLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * hit.distance);
         }
         else
         {
             currentLeftLine.SetPosition(0, transform.position);
-            currentLeftLine.SetPosition(1, transform.TransformPoint(Vector3.forward) * 90);
+            currentLeftLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * 90);
         }
 
         bool triggerValue;
@@ -45,8 +49,17 @@ public class LeftController : MonoBehaviour
             {
                 shotHit.transform.gameObject.SendMessage("shoot");
             }
+
+            currentLeftLine.startColor = fired;
+            currentLeftLine.endColor = fired;
         }
 
         frames++;
+
+        if(frames > 25)
+        {
+            currentLeftLine.startColor = neutral;
+            currentLeftLine.endColor = neutral;
+        }
     }
 }

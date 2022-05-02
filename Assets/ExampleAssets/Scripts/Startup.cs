@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Startup : MonoBehaviour
 {
-    //Links to empty GameObject
-
     public GameObject currentRedBloodCell;  //redBloodCell prefab
     public GameObject currentCovid;         //covid prefab
     public GameObject currentSyringe;       //syringe prefab
@@ -67,6 +65,23 @@ public class Startup : MonoBehaviour
         Instantiate(currentSyringe, new Vector3(x, y, 90), transform.rotation);
 
         Invoke("createSyringes", Random.Range(syringeDelayMin, syringeDelayMax));
+    }
+
+    void levelTwo()
+    {
+        CancelInvoke("createCovids");
+        CancelInvoke("createSyringes");
+
+        covidDelayMin = 1.0f;
+        covidDelayMax = 3.0f;
+        Covid.setSpeed(24.0f);
+
+        syringeDelayMin = 20.0f;
+        syringeDelayMax = 35.0f;
+        Syringe.setSpeed(24.0f);
+
+        Invoke("createCovids", covidDelayMax);
+        Invoke("createSyringes", syringeDelayMax);
     }
 
     public static void changeScore(int amount)
