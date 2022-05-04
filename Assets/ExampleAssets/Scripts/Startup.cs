@@ -8,8 +8,8 @@ public class Startup : MonoBehaviour
     public GameObject currentCovid;         //covid prefab
     public GameObject currentSyringe;       //syringe prefab
 
-    private float covidDelayMin = 2.0f;     //Minimum time between covid spawning in seconds
-    private float covidDelayMax = 4.0f;     //Maximum time between covid spawning in seconds
+    private float covidDelayMin = 0.0f;     //Minimum time between covid spawning in seconds
+    private float covidDelayMax = 2.0f;     //Maximum time between covid spawning in seconds
 
     private float syringeDelayMin = 15.0f;  //Minimum time between syringe spawning in seconds
     private float syringeDelayMax = 30.0f;  //Maximum time between syringe spawning in seconds
@@ -72,13 +72,8 @@ public class Startup : MonoBehaviour
         CancelInvoke("createCovids");
         CancelInvoke("createSyringes");
 
-        covidDelayMin = 1.0f;
-        covidDelayMax = 3.0f;
-        Covid.setSpeed(24.0f);
-
-        syringeDelayMin = 20.0f;
-        syringeDelayMax = 35.0f;
-        Syringe.setSpeed(24.0f);
+        Covid.setSpeed(40.0f);
+        Syringe.setSpeed(40.0f);
 
         Invoke("createCovids", covidDelayMax);
         Invoke("createSyringes", syringeDelayMax);

@@ -23,8 +23,7 @@ public class LeftController : MonoBehaviour
         RaycastHit hit;
         int layerMask = 1 << 6;
 
-        bool target = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask);
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 90, Color.green);
+        bool target = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 15, layerMask);
 
         if(target)
         {
@@ -34,7 +33,7 @@ public class LeftController : MonoBehaviour
         else
         {
             currentLeftLine.SetPosition(0, transform.position);
-            currentLeftLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * 90);
+            currentLeftLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * 15);
         }
 
         bool triggerValue;
@@ -43,7 +42,7 @@ public class LeftController : MonoBehaviour
             frames = 0;
             RaycastHit shotHit;
 
-            bool shotTarget = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shotHit, Mathf.Infinity, layerMask);
+            bool shotTarget = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shotHit, 15, layerMask);
 
             if(shotTarget)
             {

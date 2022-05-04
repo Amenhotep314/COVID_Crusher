@@ -23,8 +23,7 @@ public class RightController : MonoBehaviour
         RaycastHit hit;
         int layerMask = 1 << 6;
 
-        bool target = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask);
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 90, Color.green);
+        bool target = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 15, layerMask);
 
         if(target)
         {
@@ -34,16 +33,16 @@ public class RightController : MonoBehaviour
         else
         {
             currentRightLine.SetPosition(0, transform.position);
-            currentRightLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * 90);
+            currentRightLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * 15);
         }
 
         bool triggerValue;
-        if(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue && frames >= 25)
+        if(InputDevices.GetDeviceAtXRNode(XRNode.RightHand).TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue && frames >= 25)
         {
             frames = 0;
             RaycastHit shotHit;
 
-            bool shotTarget = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shotHit, Mathf.Infinity, layerMask);
+            bool shotTarget = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shotHit, 15, layerMask);
 
             if(shotTarget)
             {

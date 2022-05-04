@@ -5,7 +5,7 @@ using UnityEngine;
 public class Covid : MonoBehaviour
 {
     private float[] rotations = new float[3];   //Rotation amount along each axis, from negative to positive speeds
-    private static float speed = 18.0f;                //Translate amount along the z-axis
+    private static float speed = 30.0f;                //Translate amount along the z-axis
     private float rotationSpeed = 40.0f;         //Maximum rotation amount
 
     void Start()
