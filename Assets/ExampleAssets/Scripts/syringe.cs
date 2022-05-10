@@ -30,11 +30,7 @@ public class Syringe : MonoBehaviour
     public void shoot()
     {
         Startup.changeScore(300);
+        Startup.changeLives(1);
         Object.Destroy(this.gameObject);
-    }
-
-    public static void setSpeed(float newSpeed)
-    {
-        speed = newSpeed;
     }
 }

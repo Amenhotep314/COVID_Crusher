@@ -23,6 +23,8 @@ public class Covid : MonoBehaviour
 
         if(transform.position[2] <= 3.5f)
         {
+            Startup.changeScore(-100);
+            Startup.changeLives(-1);
             Object.Destroy(this.gameObject);
         }
     }
@@ -31,10 +33,5 @@ public class Covid : MonoBehaviour
     {
         Startup.changeScore(200);
         Object.Destroy(this.gameObject);
-    }
-
-    public static void setSpeed(float newSpeed)
-    {
-        speed = newSpeed;
     }
 }

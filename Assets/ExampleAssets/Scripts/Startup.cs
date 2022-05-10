@@ -1,28 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Startup : MonoBehaviour
 {
+    //Tied to an empty GameObject to manage things
+
     public GameObject currentRedBloodCell;  //redBloodCell prefab
     public GameObject currentCovid;         //covid prefab
     public GameObject currentSyringe;       //syringe prefab
-
+    public Text currentText;                //text to display score and lives
     private float covidDelayMin = 0.0f;     //Minimum time between covid spawning in seconds
     private float covidDelayMax = 2.0f;     //Maximum time between covid spawning in seconds
 
     private float syringeDelayMin = 15.0f;  //Minimum time between syringe spawning in seconds
     private float syringeDelayMax = 30.0f;  //Maximum time between syringe spawning in seconds
-    private static int score = 0;
+
+    private static int score = 0;   //initial score
+    private static int lives = 10;  //initial lives
 
     void Start()
     {
+        //Creates cells, enemies, and powerups
+
         createCells();
         Invoke("createCovids", covidDelayMax);
         Invoke("createSyringes", syringeDelayMax);
     }
 
-    void Update() {}
+    void Update() 
+    {
+        //Updates the score and lives display
+
+        currentText.text = score.ToString() + "\n" + lives.ToString();
+
+        if(lives <= 0)
+        {
+            lives = 0;
+            CancelInvoke("createCovids");
+            CancelInvoke("createSyringes");
+        }
+
+        if(score < 0)
+        {
+            score = 0;
+        }
+    }
 
     void createCells()
     {
@@ -67,21 +91,13 @@ public class Startup : MonoBehaviour
         Invoke("createSyringes", Random.Range(syringeDelayMin, syringeDelayMax));
     }
 
-    void levelTwo()
-    {
-        CancelInvoke("createCovids");
-        CancelInvoke("createSyringes");
-
-        Covid.setSpeed(40.0f);
-        Syringe.setSpeed(40.0f);
-
-        Invoke("createCovids", covidDelayMax);
-        Invoke("createSyringes", syringeDelayMax);
-    }
-
     public static void changeScore(int amount)
     {
         score += amount;
-        print(score);
+    }
+
+    public static void changeLives(int amount)
+    {
+        lives += amount;
     }
 }

@@ -23,7 +23,7 @@ public class RightController : MonoBehaviour
         RaycastHit hit;
         int layerMask = 1 << 6;
 
-        bool target = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 15, layerMask);
+        bool target = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 30, layerMask);
 
         if(target)
         {
@@ -33,7 +33,7 @@ public class RightController : MonoBehaviour
         else
         {
             currentRightLine.SetPosition(0, transform.position);
-            currentRightLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * 15);
+            currentRightLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * 30);
         }
 
         bool triggerValue;
@@ -42,7 +42,7 @@ public class RightController : MonoBehaviour
             frames = 0;
             RaycastHit shotHit;
 
-            bool shotTarget = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shotHit, 15, layerMask);
+            bool shotTarget = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shotHit, 30, layerMask);
 
             if(shotTarget)
             {
