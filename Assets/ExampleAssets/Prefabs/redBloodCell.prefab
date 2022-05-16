@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4914666282449061664}
   - component: {fileID: 3607500470838299568}
   - component: {fileID: 2503408376516343603}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: group_0_15277357
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5323874220599015244}
   - component: {fileID: 5649917571425463756}
   - component: {fileID: 3112716935540342687}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: redBloodCell
   m_TagString: Untagged
   m_Icon: {fileID: 0}

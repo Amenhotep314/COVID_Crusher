@@ -16,46 +16,27 @@ public class LeftController : MonoBehaviour
         currentLeftLine.endColor = neutral;
     }
 
-    int frames = 25;
+    int leftFrames = 15;
 
     void FixedUpdate()
     {
-        RaycastHit hit;
+        RaycastHit shotHit;
         int layerMask = 1 << 6;
 
-        bool target = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 30, layerMask);
+        currentLeftLine.SetPosition(0, transform.position);
+        currentLeftLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * 30);
 
-        if(target)
+        bool shotTarget = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shotHit, 30, layerMask);
+        if(shotTarget)
         {
-            currentLeftLine.SetPosition(0, transform.position);
-            currentLeftLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * hit.distance);
-        }
-        else
-        {
-            currentLeftLine.SetPosition(0, transform.position);
-            currentLeftLine.SetPosition(1, transform.TransformDirection(Vector3.forward) * 30);
-        }
-
-        bool triggerValue;
-        if(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue && frames >= 25)
-        {
-            frames = 0;
-            RaycastHit shotHit;
-
-            bool shotTarget = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out shotHit, 30, layerMask);
-
-            if(shotTarget)
-            {
-                shotHit.transform.gameObject.SendMessage("shoot");
-            }
-
+            shotHit.transform.gameObject.SendMessage("shoot");
             currentLeftLine.startColor = fired;
             currentLeftLine.endColor = fired;
+            leftFrames = 0;
         }
 
-        frames++;
-
-        if(frames > 25)
+        leftFrames++;
+        if(leftFrames > 15)
         {
             currentLeftLine.startColor = neutral;
             currentLeftLine.endColor = neutral;
