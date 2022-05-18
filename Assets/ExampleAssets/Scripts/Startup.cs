@@ -17,8 +17,8 @@ public class Startup : MonoBehaviour
     private float syringeDelayMin = 15.0f;  //Minimum time between syringe spawning in seconds
     private float syringeDelayMax = 30.0f;  //Maximum time between syringe spawning in seconds
 
-    private static int score = 0;   //initial score
-    private static int lives = 10;  //initial lives
+    private static int score = 0;   //Initial score
+    private static int lives = 10;  //Initial lives
 
     void Start()
     {
@@ -71,6 +71,8 @@ public class Startup : MonoBehaviour
 
     void createCovids()
     {
+        //Spawns instances of covid at time intervals between covidDelayMin and covidDelayMax
+
         float radius = Random.Range(0.0f, 11.0f);           //Distance of covid from vein's center, from 0 to 11 units
         float theta = Random.Range(0.0f, 2.0f * Mathf.PI);  //Angle of cell from x-axis counterclockwise, from 0 to 2π radians
         float x = radius * Mathf.Cos(theta);                //Covid's (x, y) coordinates
@@ -82,6 +84,8 @@ public class Startup : MonoBehaviour
 
     void createSyringes()
     {
+        //Spawns instances of syringe at time intervals between syringeDelayMin and syringeDelayMax
+
         float radius = Random.Range(0.0f, 10.0f);           //Distance of syringe from vein's center, from 0 to 10 units
         float theta = Random.Range(0.0f, 2.0f * Mathf.PI);  //Angle of cell from x-axis counterclockwise, from 0 to 2π radians
         float x = radius * Mathf.Cos(theta);                //Covid's (x, y) coordinates
@@ -93,11 +97,15 @@ public class Startup : MonoBehaviour
 
     public static void changeScore(int amount)
     {
+        //Increments the score
+
         score += amount;
     }
 
     public static void changeLives(int amount)
     {
+        //Increments the life counter
+
         lives += amount;
     }
 }

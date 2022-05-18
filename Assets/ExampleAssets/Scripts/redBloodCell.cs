@@ -9,10 +9,12 @@ public class RedBloodCell : MonoBehaviour
     private float[] rotations = new float[3];   //Rotation amount along each axis, from negative to positive speeds
     private Vector3 initialPosition;            //Location to return to after reaching the end of the vein
     private float speed = 6.0f;                 //Translate amount along the z-axis
-    private float rotationSpeed = 30.0f;         //Maximum rotation amount
+    private float rotationSpeed = 30.0f;        //Maximum rotation amount
 
     void Start()
     {
+        //Sets random amounts of rotation around each axis and establishes a home position
+
         for(int i = 0; i < 3; i++)
         {
             rotations[i] = Random.Range(-rotationSpeed, rotationSpeed);
@@ -23,6 +25,8 @@ public class RedBloodCell : MonoBehaviour
 
     void Update()
     {
+        //Moves the red blood cell, rotates it, and eventually returns it to its home position
+
         transform.Translate(-Vector3.forward * Time.deltaTime * speed, Space.World);
         transform.Rotate(rotations[0] * Time.deltaTime, rotations[1] * Time.deltaTime, rotations[2] * Time.deltaTime, Space.Self);
 
@@ -30,10 +34,5 @@ public class RedBloodCell : MonoBehaviour
         {
             transform.position = initialPosition;
         }
-    }
-
-    public void shoot()
-    {
-        Startup.changeScore(-100);
     }
 }
